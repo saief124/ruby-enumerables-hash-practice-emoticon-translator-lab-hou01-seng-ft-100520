@@ -44,7 +44,7 @@ def get_english_meaning(file_path=".lib/emoticons.yml",emoticons)
   b.keys.find do|k,v|
 
       if b[k][:japanese]==emoticons
-      return b[k]
+      return b.key(b[k])
       end
   end
   if b.value?(emoticons)==false
