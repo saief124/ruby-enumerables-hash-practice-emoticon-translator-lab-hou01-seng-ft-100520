@@ -25,7 +25,7 @@ def get_japanese_emoticon(file_path=".lib/emoticons.yml",emoticons)
   #from the value received from argument emoticons identify the key and return the other value in that key
   #b.each_with_object({}) do |(k,v),a|
   #  a[k]={}
-key_identifier= b.select{|k,v|v[1]==emoticons}
+key_identifier= b.select{|k,v|v[k]==emoticons}
 
 
 
