@@ -24,7 +24,7 @@ def get_japanese_emoticon(file_path=".lib/emoticons.yml",emoticons)
  emoticons= b.keys.find do|k,v|
 
     b[k][:japanese]==emoticons
-    
+
     # return b[k][:english]
 
   # else
