@@ -36,7 +36,7 @@ def get_japanese_emoticon(file_path=".lib/emoticons.yml",emoticons)
 
 
 
-     binding.pry
+    # binding.pry
   #  else
   #    sorry_message
    #end
