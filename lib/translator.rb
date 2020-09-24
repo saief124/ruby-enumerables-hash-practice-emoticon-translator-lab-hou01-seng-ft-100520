@@ -27,7 +27,7 @@ def get_japanese_emoticon(file_path=".lib/emoticons.yml",emoticons)
   #  a[k]={}
 b.select{|k,v|v[1]==emoticons}
 
-      
+
 
       binding.pry
 
