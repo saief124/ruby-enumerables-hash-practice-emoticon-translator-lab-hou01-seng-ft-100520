@@ -34,6 +34,21 @@ end
 
 
 
-def get_english_meaning
+def get_english_meaning(file_path=".lib/emoticons.yml",emoticons)
+  # code goes here
+  b={}
+  key_identifier=""
+  b=load_library(file_path)
+  sorry_message="Sorry, that emoticon was not found"
+
+  b.keys.find do|k,v|
+
+      if b[k][:japanese]==emoticons
+      return b[k][:english]
+      end
+  end
+  if b.value?(emoticons)==false
+      return sorry_message
+    end
   # code goes here
 end
