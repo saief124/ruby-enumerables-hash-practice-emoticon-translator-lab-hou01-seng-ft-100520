@@ -29,7 +29,7 @@ key_identifier= b.select{|k,v|v[:japanese]==emoticons}
 
 
 
-    #  binding.pry
+     binding.pry
 
 
 
