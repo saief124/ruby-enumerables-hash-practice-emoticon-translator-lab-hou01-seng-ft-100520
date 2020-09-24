@@ -26,8 +26,6 @@ def get_japanese_emoticon(file_path=".lib/emoticons.yml",emoticons)
       if b[k][:english]==emoticons
       return b[k][:japanese]
 
-    elsif b[k][:english]!=emoticons
-      return sorry_message
  end
 end
  #
