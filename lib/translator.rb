@@ -21,10 +21,8 @@ def get_japanese_emoticon(file_path=".lib/emoticons.yml",emoticons)
   b=load_library(file_path)
   sorry_message="Sorry, that emoticon was not found"
 
-  b.keys.find do|k,v|
-    if    b[k][:japanese]==emoticons
-
-    return b[k][:english]
+  if b.keys.find do|k,v|==emoticons
+      b[k][:english]
 
    else
     return sorry_message
