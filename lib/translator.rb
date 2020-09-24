@@ -28,9 +28,9 @@ def get_japanese_emoticon(file_path=".lib/emoticons.yml",emoticons)
    else
     return sorry_message
    end
- 
+
  #binding.pry
-   
+
 
 
    #b["angel"]=>{:english=>"O:)", :japanese=>"Japanesesymbol"}
