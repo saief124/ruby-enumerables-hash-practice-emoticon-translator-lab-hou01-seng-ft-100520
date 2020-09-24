@@ -30,28 +30,10 @@ def get_japanese_emoticon(file_path=".lib/emoticons.yml",emoticons)
   if b.value?(emoticons)==false
       return sorry_message
     end
+end
 
 
-
-   #b["angel"]=>{:english=>"O:)", :japanese=>"Japanesesymbol"}
-   #b["angel"][:english]=>"O:)"
-   #from the value received from argument emoticons identify the key and return the other value in that key
-   #b.each_with_object({}) do |(k,v),a|
-   #  a[k]={}
-
-    # binding.pry
-  #  else
-  #    sorry_message
-   #end
-
-
-#    if v[:japanese]==emoticons
-#    v[:english]
-#   } #ends if..else
- #ends Enumerables
-#binding.pry
-end #ends method
-
+  
 def get_english_meaning
   # code goes here
 end
