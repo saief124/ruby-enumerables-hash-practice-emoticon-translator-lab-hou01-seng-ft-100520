@@ -28,7 +28,7 @@ def get_japanese_emoticon(file_path=".lib/emoticons.yml",emoticons)
  b.each{|k,v|key_identifier=v} do
    if key_identifier[:japanese]==emoticons
      return key_identifier[:english]
-     
+
    else
      sorry_message
    end
