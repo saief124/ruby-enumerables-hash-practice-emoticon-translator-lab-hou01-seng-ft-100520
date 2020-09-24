@@ -30,20 +30,13 @@ def get_japanese_emoticon(file_path=".lib/emoticons.yml",emoticons)
      return key_identifier[:english]
 
    else
-     sorry_message
+    return sorry_message
    end
  end
 
 
 
      binding.pry
-
-
-
-
-
-
-
   #  else
   #    sorry_message
    #end
