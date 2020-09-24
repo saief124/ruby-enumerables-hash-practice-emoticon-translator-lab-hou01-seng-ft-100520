@@ -20,11 +20,7 @@ def get_japanese_emoticon(file_path=".lib/emoticons.yml",emoticons)
   key_identifier=""
   b=load_library(file_path)
   sorry_message="Sorry, that emoticon was not found"
-  #b["angel"]=>{:english=>"O:)", :japanese=>"Japanesesymbol"}
-  #b["angel"][:english]=>"O:)"
-  #from the value received from argument emoticons identify the key and return the other value in that key
-  #b.each_with_object({}) do |(k,v),a|
-  #  a[k]={}
+
  b.each{|k,v|key_identifier=v}
    if key_identifier[:japanese]==emoticons
      return key_identifier[:english]
@@ -34,7 +30,11 @@ def get_japanese_emoticon(file_path=".lib/emoticons.yml",emoticons)
    end
 
 
-
+   #b["angel"]=>{:english=>"O:)", :japanese=>"Japanesesymbol"}
+   #b["angel"][:english]=>"O:)"
+   #from the value received from argument emoticons identify the key and return the other value in that key
+   #b.each_with_object({}) do |(k,v),a|
+   #  a[k]={}
 
     # binding.pry
   #  else
