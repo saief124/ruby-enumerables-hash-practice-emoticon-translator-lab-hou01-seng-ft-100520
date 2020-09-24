@@ -23,7 +23,7 @@ def get_japanese_emoticon(file_path=".lib/emoticons.yml",emoticons)
 
   b.keys.find do|k,v|
 
-      if b[k][:english]==emoticons && b.value?emoticons
+      if b[k][:english]==emoticons && b.value? emoticons
       return b[k][:japanese]
 
     else
